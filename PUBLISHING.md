@@ -17,17 +17,17 @@
 - [ ] Test theme with different fonts
 
 ### Package.json Updates
-- [ ] Add repository URL
-- [ ] Set publisher name
-- [ ] Add icon path
+- [x] Add repository URL
+- [x] Set publisher name
+- [x] Add icon path
 - [ ] Review categories and keywords
 - [ ] Update version if needed
 
 ### Documentation
-- [ ] README is complete and accurate
-- [ ] Installation instructions clear
+- [x] README is complete and accurate
+- [x] Installation instructions clear
 - [ ] Screenshots included
-- [ ] License information present
+- [x] License information present
 
 ## 📦 Publishing Process
 

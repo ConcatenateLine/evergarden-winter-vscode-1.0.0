@@ -34,8 +34,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ConcatenateLine/evergarden-winter-vscode-1.0.0.git"
   },
-  "icon": "",
+  "icon": "icon.png",
   "license": "MIT"
 }
