@@ -1,0 +1,66 @@
+# VS Code Extension - Files to exclude from package
+
+# Source files
+*.ts
+*.map
+src/
+
+# Development files
+.git/
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+
+# Test files
+test-theme.html
+test-theme.js
+**/test/**
+**/tests/**
+
+# Documentation (keep README, LICENSE)
+PUBLISHING.md
+*.md
+!README.md
+!LICENSE
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code files
+.vscode/
+.vscode-test/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Temporary files
+tmp/
+temp/
+
+# Screenshots (unless you want them in package)
+screenshots/
+*.png
+!icon.png
+!preview.png
