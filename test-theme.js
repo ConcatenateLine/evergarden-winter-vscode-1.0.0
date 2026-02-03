@@ -34,7 +34,7 @@ if (packageJson) {
 // Test theme files
 console.log('\n🎨 Testing theme files...');
 
-const darkTheme = testJSONFile('themes/evergarden-winter-theme.json', 'Dark Theme');
+const darkTheme = testJSONFile('themes/evergarden-winter-dark-theme.json', 'Dark Theme');
 const lightTheme = testJSONFile('themes/evergarden-winter-light-theme.json', 'Light Theme');
 
 if (darkTheme) {
@@ -83,7 +83,7 @@ console.log('\n📁 Testing file structure...');
 const requiredFiles = [
     'package.json',
     'README.md',
-    'themes/evergarden-winter-theme.json',
+    'themes/evergarden-winter-dark-theme.json',
     'themes/evergarden-winter-light-theme.json'
 ];
 

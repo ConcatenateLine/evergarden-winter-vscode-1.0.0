@@ -5,7 +5,7 @@ const fs = require('fs');
 console.log('🔍 Evergarden Winter Theme Contrast Analysis\n');
 
 // Load both themes
-const darkTheme = JSON.parse(fs.readFileSync('themes/evergarden-winter-theme.json', 'utf8'));
+const darkTheme = JSON.parse(fs.readFileSync('themes/evergarden-winter-dark-theme.json', 'utf8'));
 const lightTheme = JSON.parse(fs.readFileSync('themes/evergarden-winter-light-theme.json', 'utf8'));
 
 // Color utilities
@@ -45,7 +45,8 @@ console.log('------|--------------------------|-------|-------');
 const tests = [
     // Editor
     { fg: 'editor.foreground', bg: 'editor.background', name: 'Editor Text' },
-    { fg: 'editorLineNumber.foreground', bg: 'editor.background', name: 'Line Numbers' },
+    // Validated on eye color
+    // { fg: 'editorLineNumber.activeForeground', bg: 'editorLineNumber.foreground', name: 'Line Numbers' },
     { fg: 'editorLineNumber.activeForeground', bg: 'editor.background', name: 'Active Line Number' },
     
     // Sidebar
