@@ -23,7 +23,7 @@
       {
         "label": "Evergarden Winter",
         "uiTheme": "vs-dark",
-        "path": "./themes/evergarden-winter-theme.json"
+        "path": "./themes/evergarden-winter-dark-theme.json"
       },
       {
         "label": "Evergarden Winter Light",
