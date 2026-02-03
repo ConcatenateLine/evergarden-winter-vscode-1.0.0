@@ -1,0 +1,41 @@
+{
+  "name": "evergarden-winter-vscode",
+  "displayName": "Evergarden Winter",
+  "description": "A cozy winter color theme inspired by Evergarden - perfect for long coding sessions",
+  "version": "1.0.0",
+  "publisher": "concatenateline",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "evergarden",
+    "winter",
+    "cozy"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Evergarden Winter",
+        "uiTheme": "vs-dark",
+        "path": "./themes/evergarden-winter-theme.json"
+      },
+      {
+        "label": "Evergarden Winter Light",
+        "uiTheme": "vs",
+        "path": "./themes/evergarden-winter-light-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "icon": "",
+  "license": "MIT"
+}
