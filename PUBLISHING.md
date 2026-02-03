@@ -13,7 +13,7 @@
 ### Visual Assets
 - [ ] Create preview.png (1280x640 recommended)
 - [ ] Take screenshots of both themes
-- [ ] Design theme icon (optional)
+- [x] Design theme icon (optional)
 - [ ] Test theme with different fonts
 
 ### Package.json Updates
