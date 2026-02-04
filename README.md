@@ -1,14 +1,14 @@
 # Evergarden Winter - VS Code Themes
 
-Cozy winter color themes for Visual Studio Code, inspired by the Evergarden color scheme. Perfect for long coding sessions with warm, nature-inspired palettes.
+Nature-inspired winter color themes for Visual Studio Code, inspired by the Evergarden color scheme. Perfect for long coding sessions with carefully balanced forest and winter tones.
 
 ## 🎨 Available Themes
 
 ### 🌲 Evergarden Winter (Dark)
-A cozy dark theme with deep forest backgrounds and warm beige tones.
+A cozy dark theme with deep forest green-grey backgrounds and light grey foreground.
 
 ### ❄️ Evergarden Winter Light  
-A gentle light theme with warm paper backgrounds and soft forest accents.
+A gentle light theme with warm paper white backgrounds and rich dark brown text.
 
 ![Theme Preview](preview.png)
 
@@ -26,22 +26,34 @@ A gentle light theme with warm paper backgrounds and soft forest accents.
 Both themes use a carefully selected winter forest palette:
 
 ### Dark Theme
-- **Background**: Deep forest green-grey (#232a2e -> #0E1012)
-- **Foreground**: Warm beige (#e5dfc8)
-- **Accent**: Soft aqua/green (#9dd9ad, #83c092)
+- **Background**: Deep forest green-grey (#0E1012)
+- **Foreground**: Light grey (#e2e3e4)
+- **Accent**: Soft aqua/green (#a8c9b0, #9ae8a8)
 
 ### Light Theme  
-- **Background**: Warm paper white (#f5f0e0)
-- **Foreground**: Soft charcoal (#5a6268)
-- **Accent**: Soft forest green (#83c092, #9dd9ad)
+- **Background**: Warm paper white (#f8f7f3)
+- **Foreground**: Dark brown (#3a2f27)
+- **Accent**: Forest green (#6d6500, #1f5942)
 
-### Shared Syntax Colors:
-- Red: #f2a0a3 (keywords, tags)
-- Green: #b4d89f (strings)
-- Yellow: #e9d5a1 (types, numbers)
-- Blue: #83c092/#99cec7 (functions)
-- Purple: #e5b5d1 (constants)
-- Cyan: #9dd9ad (operators)
+### Dark Theme Syntax Colors:
+- **Purple**: #a080c0 (keywords, modifiers)
+- **Green**: #80a090 (strings, namespaces)
+- **Olive**: #a08070 (functions, operators)
+- **Brown**: #a08060 (classes, types, enums)
+- **Teal**: #90c0a0 (numbers)
+- **Pink**: #f5d0e3 (constants, variables)
+- **Cyan**: #b8f0e0 (enum members)
+- **Grey**: #9fb5bb (comments)
+
+### Light Theme Syntax Colors:
+- **Red**: #a63355 (keywords, modifiers)
+- **Green**: #1f5942 (strings, namespaces, classes)
+- **Olive**: #6d6500 (functions, operators, parameters)
+- **Brown**: #8d4620 (classes, types, enums)
+- **Teal**: #1a5858 (numbers)
+- **Pink**: #c75080 (constants, variables, decorators)
+- **Blue**: #2d5080 (enum members, events)
+- **Grey**: #696f75 (comments)
 
 ## Installation
 
@@ -57,7 +69,7 @@ Both themes use a carefully selected winter forest palette:
    .vscode/extensions/evergarden-winter-1.0.0/
    ├── package.json
    └── themes/
-       ├── evergarden-winter-theme.json
+       ├── evergarden-winter-dark-theme.json
        └── evergarden-winter-light-theme.json
    ```
 
@@ -81,7 +93,7 @@ If you prefer, you can add custom colors directly to your `settings.json`:
 
 1. Press `Ctrl+,` (or `Cmd+,` on macOS) to open Settings
 2. Click the `{}` icon in the top right to open `settings.json`
-3. Copy the entire contents of `evergarden-winter-theme.json`
+3. Copy the entire contents of `evergarden-winter-[dark|light]-theme.json`
 4. Add it to your settings under `"workbench.colorCustomizations"` and `"editor.tokenColorCustomizations"`
 
 ## Matching Terminal Theme
@@ -94,14 +106,14 @@ All three use the exact same color palette for a consistent development environm
 
 ## Customization
 
-You can customize the theme by modifying the color values in `evergarden-winter-theme.json`. Some common customizations:
+You can customize the theme by modifying the color values in `evergarden-winter-[dark|light]-theme.json`. Some common customizations:
 
 ### Change background opacity
 Add to your `settings.json`:
 ```json
 "workbench.colorCustomizations": {
   "[Evergarden Winter]": {
-    "editor.background": "#232a2eee"
+    "editor.background": "#0E1012"
   }
 }
 ```
@@ -114,7 +126,7 @@ Modify the `fontStyle` properties in the theme file:
 - `""` - Remove styling
 
 ### Change accent color
-Find and replace the accent color `#9dd9ad` with your preferred color throughout the theme file.
+Find and replace the accent color `#9ae8a8` with your preferred color throughout the theme file.
 
 ## Supported Languages
 
