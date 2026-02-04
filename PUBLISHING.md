@@ -11,22 +11,22 @@
 - [x] Semantic tokens working
 
 ### Visual Assets
-- [ ] Create preview.png (1280x640 recommended)
-- [ ] Take screenshots of both themes
+- [x] Create preview.png (1280x640 recommended)
+- [x] Take screenshots of both themes
 - [x] Design theme icon (optional)
-- [ ] Test theme with different fonts
+- [x] Test theme with different fonts
 
 ### Package.json Updates
 - [x] Add repository URL
 - [x] Set publisher name
 - [x] Add icon path
-- [ ] Review categories and keywords
-- [ ] Update version if needed
+- [x] Review categories and keywords
+- [x] Update version if needed
 
 ### Documentation
 - [x] README is complete and accurate
 - [x] Installation instructions clear
-- [ ] Screenshots included
+- [x] Screenshots included
 - [x] License information present
 
 ## 📦 Publishing Process
@@ -121,7 +121,7 @@ Consider creating:
 - [x] JSON/YAML files
 - [x] Markdown files
 - [x] Terminal/Integrated Console
-- [ ] Debug mode
+- [x] Debug mode
 - [x] Git integration
 - [x] Search results
 - [x] Settings UI

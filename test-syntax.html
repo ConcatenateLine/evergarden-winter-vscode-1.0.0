@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Syntax Test</title>
+    <style>
+        /* CSS Syntax Test */
+        body {
+            font-family: 'Fira Code', monospace;
+            background-color: #f8f7f3;
+            color: #3a2f27;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* CSS Selectors and Properties */
+        .theme-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #dark-theme {
+            background: #0E1012;
+            color: #e2e3e4;
+        }
+        
+        .theme-dark:hover {
+            background: #1a2024;
+        }
+        
+        /* CSS Comments */
+        /* This is a CSS comment */
+        /**
+         * Multi-line CSS comment
+         */
+        
+        /* CSS Variables */
+        :root {
+            --primary-color: #6d6500;
+            --secondary-color: #a63355;
+            --background-color: #f8f7f3;
+            --text-color: #3a2f27;
+        }
+        
+        /* CSS Media Queries */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+        
+        /* CSS Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HTML Comments -->
+        <!-- This is an HTML comment -->
+        
+        <!-- HTML Structure -->
+        <header>
+            <h1>Evergarden Theme Test</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#themes">Themes</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="themes">
+                <h2>Theme Testing</h2>
+                
+                <!-- HTML Forms -->
+                <form id="theme-form" method="POST" action="/submit">
+                    <fieldset>
+                        <legend>Select Theme</legend>
+                        
+                        <div class="theme-selector">
+                            <label for="dark-theme">
+                                <input type="radio" id="dark-theme" name="theme" value="dark" checked>
+                                Dark Theme
+                            </label>
+                            
+                            <label for="light-theme">
+                                <input type="radio" id="light-theme" name="theme" value="light">
+                                Light Theme
+                            </label>
+                            
+                            <label for="auto-theme">
+                                <input type="checkbox" id="auto-theme" name="auto" value="auto">
+                                Auto-detect
+                            </label>
+                        </div>
+                        
+                        <div class="form-controls">
+                            <label for="custom-color">
+                                Custom Color:
+                                <input type="color" id="custom-color" name="color" value="#6d6500">
+                            </label>
+                            
+                            <label for="opacity">
+                                Opacity:
+                                <input type="range" id="opacity" name="opacity" min="0" max="100" value="100">
+                            </label>
+                            
+                            <label for="font-size">
+                                Font Size:
+                                <select id="font-size" name="fontSize">
+                                    <option value="12px">Small</option>
+                                    <option value="14px" selected>Medium</option>
+                                    <option value="16px">Large</option>
+                                    <option value="18px">Extra Large</option>
+                                </select>
+                            </label>
+                            
+                            <textarea name="notes" rows="4" cols="50" placeholder="Enter your theme notes here..."></textarea>
+                            
+                            <button type="submit" class="btn btn-primary">Apply Theme</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <!-- HTML Tables -->
+                <table class="theme-table">
+                    <caption>Theme Color Comparison</caption>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Dark Theme</th>
+                            <th>Light Theme</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Background</td>
+                            <td>#0E1012</td>
+                            <td>#f8f7f3</td>
+                            <td>Main editor background</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Foreground</td>
+                            <td>#e2e3e4</td>
+                            <td>#3a2f27</td>
+                            <td>Main text color</td>
+                        </tr>
+                        <tr>
+                            <td>Keywords</td>
+                            <td>#f5a8b8</td>
+                            <td>#a63355</td>
+                            <td>Control flow keywords</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Last updated: 2024</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <!-- HTML Lists -->
+                <h3>Theme Features</h3>
+                <ul>
+                    <li>Excellent contrast ratios</li>
+                    <li>Nature-inspired colors</li>
+                    <li>Support for multiple languages
+                        <ul>
+                            <li>JavaScript/TypeScript</li>
+                            <li>Python</li>
+                            <li>Rust</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ol>
+                    <li>Install the theme</li>
+                    <li>Configure VS Code settings</li>
+                    <li>Enjoy coding!</li>
+                </ol>
+                
+                <!-- HTML Semantic Elements -->
+                <article>
+                    <header>
+                        <h3>Article: Theme Development</h3>
+                        <time datetime="2024-01-15">January 15, 2024</time>
+                    </header>
+                    
+                    <p>
+                        Developing VS Code themes requires careful attention to 
+                        <strong>color contrast</strong> and <em>accessibility</em> 
+                        standards.
+                    </p>
+                    
+                    <blockquote>
+                        "Good themes don't just look pretty - they reduce eye strain 
+                        and improve code readability."
+                    </blockquote>
+                    
+                    <pre><code>// Example code
+function applyTheme(theme) {
+    document.body.className = theme;
+}</code></pre>
+                </article>
+                
+                <!-- HTML Media Elements -->
+                <figure>
+                    <img src="theme-preview.png" alt="Theme Preview" width="600" height="400">
+                    <figcaption>Evergarden Theme Preview</figcaption>
+                </figure>
+                
+                <!-- HTML Data Attributes -->
+                <div data-theme="evergarden" data-version="1.0.0" class="theme-info">
+                    <span data-info="name">Evergarden Winter</span>
+                    <span data-info="type">Dual Theme</span>
+                </div>
+                
+                <!-- HTML Template -->
+                <template id="theme-template">
+                    <div class="theme-item">
+                        <h4>${themeName}</h4>
+                        <p>${themeDescription}</p>
+                    </div>
+                </template>
+                
+                <!-- HTML Picture Element -->
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="dark-theme.png">
+                    <source media="(prefers-color-scheme: light)" srcset="light-theme.png">
+                    <img src="default-theme.png" alt="Theme Screenshot">
+                </picture>
+                
+                <!-- HTML Details/Summary -->
+                <details>
+                    <summary>Advanced Theme Settings</summary>
+                    <div class="advanced-settings">
+                        <label>
+                            <input type="checkbox" checked> Enable semantic highlighting
+                        </label>
+                        <label>
+                            <input type="checkbox"> Custom bracket colors
+                        </label>
+                        <label>
+                            <input type="checkbox"> Enhanced syntax highlighting
+                        </label>
+                    </div>
+                </details>
+                
+                <!-- HTML Progress and Meter -->
+                <div class="progress-section">
+                    <label for="theme-progress">Theme Loading:</label>
+                    <progress id="theme-progress" value="75" max="100">75%</progress>
+                    
+                    <label for="contrast-meter">Contrast Ratio:</label>
+                    <meter id="contrast-meter" value="7.5" min="1" max="21" optimum="15">7.5:1</meter>
+                </div>
+                
+                <!-- HTML Output and Sample -->
+                <output for="theme-form" name="result">Theme not selected</output>
+                
+                <samp>console.log('Theme applied successfully');</samp>
+                
+                <!-- HTML Keyboard and Variable -->
+                <p>
+                    Press <kbd>Ctrl+Shift+P</kbd> to open the command palette,
+                    then type <var>theme</var> to select a theme.
+                </p>
+                
+                <!-- HTML Mark and Highlight -->
+                <p>
+                    The <mark>Evergarden theme</mark> provides excellent 
+                    readability with carefully chosen colors.
+                </p>
+                
+                <!-- HTML Ruby (for annotations) -->
+                <ruby>
+                    Evergarden<rp>(</rp><rt>エバーガーデン</rt><rp>)</rp>
+                </ruby>
+                
+                <!-- HTML Time and Date -->
+                <p>
+                    Theme created on <time datetime="2024-01-15T10:00:00">January 15, 2024 at 10:00 AM</time>
+                </p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Evergarden Theme. All rights reserved.</p>
+            <address>
+                Contact: <a href="mailto:theme@example.com">theme@example.com</a>
+            </address>
+        </footer>
+    </div>
+    
+    <!-- JavaScript for interactivity -->
+    <script>
+        // This script tests JavaScript syntax highlighting
+        const themeForm = document.getElementById('theme-form');
+        const output = document.querySelector('output[name="result"]');
+        
+        themeForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(themeForm);
+            const theme = formData.get('theme');
+            const auto = formData.get('auto');
+            
+            if (theme && auto) {
+                output.textContent = `Theme: ${theme} (auto-detect enabled)`;
+            } else if (theme) {
+                output.textContent = `Theme: ${theme}`;
+            } else {
+                output.textContent = 'Please select a theme';
+            }
+        });
+        
+        // Dynamic theme switching
+        function switchTheme(themeName) {
+            document.body.className = themeName;
+            console.log(`Theme switched to: ${themeName}`);
+        }
+        
+        // Async theme loading simulation
+        async function loadThemeConfig() {
+            try {
+                const response = await fetch('/api/themes');
+                const themes = await response.json();
+                return themes;
+            } catch (error) {
+                console.error('Failed to load themes:', error);
+                return [];
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+# YAML Syntax Test File
+# This file tests various YAML syntax elements to verify theme colors
+
+# ===== COMMENTS =====
+# Single line comment
+# Another comment
+
+# ===== SCALAR VALUES =====
+string_value: "Evergarden Theme"
+single_quoted: 'Single quoted string'
+double_quoted: "Double quoted string"
+multiline: |
+  This is a multiline
+  string using the |
+  block scalar indicator
+folded: >
+  This is a folded
+  string that will
+  be joined into
+  a single line
+
+# ===== NUMERIC VALUES =====
+integer: 42
+negative_integer: -17
+float: 3.14159
+negative_float: -2.71828
+scientific: 1.23e-4
+hexadecimal: 0xFF0000
+octal: 0o755
+binary: 0b1010
+infinity: .inf
+negative_infinity: -.inf
+not_a_number: .nan
+
+# ===== BOOLEAN VALUES =====
+true_value: true
+false_value: false
+yes_value: yes
+no_value: no
+on_value: on
+off_value: off
+
+# ===== NULL VALUES =====
+null_value: null
+empty_value: ~
+tilde_null: ~
+
+# ===== LISTS/ARRAYS =====
+simple_list:
+  - item1
+  - item2
+  - item3
+  - "quoted item"
+  - 123
+  - true
+  - null
+
+inline_list: [item1, item2, "quoted item", 123, true, null]
+
+nested_list:
+  - - nested_item1
+    - nested_item2
+  - - another_nested
+  - - deep:
+      - nesting
+      - here
+
+complex_list:
+  - name: "Theme 1"
+    colors:
+      background: "#0E1012"
+      foreground: "#e2e3e4"
+  - name: "Theme 2"
+    colors:
+      background: "#f8f7f3"
+      foreground: "#3a2f27"
+
+# ===== MAPS/DICTIONARIES =====
+simple_map:
+  key1: value1
+  key2: value2
+  key3: "quoted value"
+
+inline_map: {key1: value1, key2: value2, key3: "quoted value"}
+
+nested_map:
+  level1:
+    level2:
+      level3:
+        deep_value: "found it"
+        another_deep: 42
+
+# ===== ANCHORS AND ALIASES =====
+default_colors: &default_colors
+  background: "#f8f7f3"
+  foreground: "#3a2f27"
+  accent: "#6d6500"
+
+theme_dark:
+  <<: *default_colors
+  background: "#0E1012"
+  foreground: "#e2e3e4"
+
+theme_light:
+  <<: *default_colors
+  name: "Evergarden Light"
+
+# ===== TAGS =====
+explicit_string: !!str "This is explicitly a string"
+explicit_int: !!int 42
+explicit_float: !!float 3.14159
+explicit_bool: !!bool true
+explicit_null: !!null null
+
+javascript_function: !!js/function |
+  function() {
+    return "Hello from JavaScript";
+  }
+
+python_object: !!python/object:__main__.MyClass
+  attribute1: value1
+  attribute2: value2
+
+# ===== SETS =====
+set_example: !!set
+  - item1
+  - item2
+  - item3
+
+# ===== ORDINAL MAPS =====
+ordered_map: !!omap
+  - name: "First"
+  - value: 1
+  - name: "Second"
+  - value: 2
+  - name: "Third"
+  - value: 3
+
+# ===== PAIRS =====
+pair_example: !!pairs
+  - key1: value1
+  - key2: value2
+  - key3: value3
+
+# ===== MERGE KEYS =====
+base_config: &base
+  version: "1.0.0"
+  author: "Theme Developer"
+
+development_config:
+  <<: *base
+  debug: true
+  logging: "verbose"
+
+production_config:
+  <<: *base
+  debug: false
+  logging: "error"
+
+# ===== FLOW STYLE =====
+flow_style_map: {name: "Evergarden", type: "theme", colors: {primary: "#6d6500", secondary: "#a63355"}}
+
+flow_style_list: ["item1", "item2", "item3", {nested: "object", array: [1, 2, 3]}]
+
+# ===== COMPLEX NESTED STRUCTURES =====
+theme_configuration:
+  metadata:
+    name: "Evergarden Winter"
+    version: 1.0.0
+    description: |
+      A beautiful winter-themed color scheme
+      for VS Code and other editors
+    tags:
+      - theme
+      - winter
+      - nature
+      - evergarden
+  
+  colors:
+    # Dark theme colors
+    dark:
+      background: "#0E1012"
+      foreground: "#e2e3e4"
+      cursor: "#e2e3e4"
+      selection: "#505b62"
+      
+      # Syntax colors
+      syntax:
+        keyword: "#f5a8b8"
+        string: "#e8c9a0"
+        comment: "#9fb5bb"
+        function: "#9ae8a8"
+        type: "#a0c8f0"
+        operator: "#f0b580"
+        number: "#90c0a0"
+        constant: "#f5d0e3"
+        variable: "#e2e3e4"
+    
+    # Light theme colors
+    light:
+      background: "#f8f7f3"
+      foreground: "#3a2f27"
+      cursor: "#3a2f27"
+      selection: "#d4e8e0"
+      
+      # Syntax colors
+      syntax:
+        keyword: "#a63355"
+        string: "#1f5942"
+        comment: "#696f75"
+        function: "#6d6500"
+        type: "#2d5080"
+        operator: "#8d4620"
+        number: "#1a5858"
+        constant: "#c75080"
+        variable: "#3a2f27"
+  
+  # Language-specific configurations
+  languages:
+    javascript:
+      extensions: [".js", ".jsx", ".mjs"]
+      highlight_rules:
+        - pattern: "\\b(function|const|let|var)\\b"
+          type: "keyword"
+        - pattern: "\"[^\"]*\""
+          type: "string"
+        - pattern: "\\/\\/.*$"
+          type: "comment"
+    
+    typescript:
+      extends: "javascript"
+      extensions: [".ts", ".tsx"]
+      additional_rules:
+        - pattern: "\\b(interface|type|enum)\\b"
+          type: "keyword"
+        - pattern: "\\b(public|private|protected)\\b"
+          type: "modifier"
+    
+    python:
+      extensions: [".py", ".pyw"]
+      highlight_rules:
+        - pattern: "\\b(def|class|if|elif|else|for|while|try|except|finally)\\b"
+          type: "keyword"
+        - pattern: "\\b(True|False|None)\\b"
+          type: "constant"
+        - pattern: "#.*$"
+          type: "comment"
+  
+  # UI elements
+  ui:
+    activity_bar:
+      background: "#1a2024"
+      foreground: "#e5dfc8"
+      border: "#2e383d"
+    
+    sidebar:
+      background: "#1a2024"
+      foreground: "#e5dfc8"
+      border: "#2e383d"
+    
+    editor:
+      background: "#0E1012"
+      foreground: "#e2e3e4"
+      line_numbers: "#394043"
+      selection: "#505b62"
+      current_line: "#252f34"
+    
+    status_bar:
+      background: "#1a2024"
+      foreground: "#e5dfc8"
+      border: "#2e383d"
+
+# ===== SPECIAL CHARACTERS AND ESCAPING =====
+special_characters:
+  colon_in_string: "This has a colon: in the middle"
+  dash_in_string: "This has a dash - in the middle"
+  bracket_in_string: "This has [brackets] in the string"
+  quote_in_string: "He said \"Hello, World!\""
+  backslash: "Path\\to\\file"
+  unicode: "Unicode test: © 2024"
+  emoji: "Theme test: 🌲❄️🎨"
+
+# ===== MULTILINE STRINGS =====
+license: |
+  MIT License
+  
+  Copyright (c) 2024 Evergarden Theme
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+# ===== DOCUMENT SEPARATORS =====
+---
+document_separator: true
+another_section: starts here
+...
+
+# ===== DIRECTIVES =====
+%TAG ! tag:clarkevans.com,2002:
+--- !clarkevans.com,2002:invoice
+  invoice: 34843
+  date: 2001-01-23
+  bill-to: &id001
+    given: Chris
+    family: Dumars
+  product:
+    - sku: BL394D
+      quantity: 4
+      description: Basketball
+      price: 450.00
+  tax: 251.42
+  total: 4443.52

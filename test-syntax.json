@@ -1,0 +1,171 @@
+{
+  "name": "evergarden-theme-test",
+  "version": "1.0.0",
+  "description": "Test file for JSON syntax highlighting in Evergarden theme",
+  "keywords": ["theme", "syntax", "test", "evergarden"],
+  "author": {
+    "name": "Theme Developer",
+    "email": "dev@example.com",
+    "url": "https://example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/evergarden-theme.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.{js,css,json}"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lodash": "^4.17.21",
+    "axios": "^1.6.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/lodash": "^4.14.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "babel-loader": "^9.1.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "css-loader": "^6.8.0",
+    "style-loader": "^3.3.0",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.6.0"
+  },
+  "themeConfig": {
+    "colors": {
+      "background": "#f8f7f3",
+      "foreground": "#3a2f27",
+      "accent": "#6d6500",
+      "keywords": "#a63355",
+      "strings": "#1f5942",
+      "functions": "#6d6500",
+      "numbers": "#1a5858",
+      "comments": "#696f75"
+    },
+    "fonts": {
+      "editor": "'Fira Code', monospace",
+      "ui": "system-ui, -apple-system, sans-serif"
+    },
+    "syntax": {
+      "semanticHighlighting": true,
+      "bracketPairing": true,
+      "colorizedBrackets": true
+    }
+  },
+  "supportedLanguages": [
+    "javascript",
+    "typescript",
+    "python",
+    "rust",
+    "html",
+    "css",
+    "json",
+    "yaml",
+    "markdown",
+    "shell",
+    "sql"
+  ],
+  "vscode": {
+    "engines": {
+      "vscode": "^1.80.0"
+    },
+    "categories": ["Themes"],
+    "contributes": {
+      "themes": [
+        {
+          "label": "Evergarden Winter",
+          "uiTheme": "vs-dark",
+          "path": "./themes/evergarden-winter-dark-theme.json"
+        },
+        {
+          "label": "Evergarden Winter Light",
+          "uiTheme": "vs",
+          "path": "./themes/evergarden-winter-light-theme.json"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2024-01-15T10:00:00.000Z",
+    "updated": "2024-01-20T15:30:00.000Z",
+    "version": "1.0.0",
+    "compatibility": {
+      "vscode": ">=1.80.0",
+      "node": ">=16.0.0"
+    }
+  },
+  "testCases": [
+    {
+      "name": "keyword_test",
+      "type": "syntax",
+      "expected": "#a63355",
+      "samples": ["if", "else", "for", "while", "function", "class"]
+    },
+    {
+      "name": "string_test", 
+      "type": "syntax",
+      "expected": "#1f5942",
+      "samples": ["\"hello\"", "'world'", "`template`"]
+    },
+    {
+      "name": "comment_test",
+      "type": "syntax", 
+      "expected": "#696f75",
+      "samples": ["// comment", "/* multi-line */"]
+    }
+  ],
+  "nullValue": null,
+  "undefinedValue": undefined,
+  "booleanTests": {
+    "true": true,
+    "false": false,
+    "null": null
+  },
+  "numericTests": {
+    "integer": 42,
+    "negative": -17,
+    "float": 3.14159,
+    "scientific": 1.23e-4,
+    "hex": 0xFF0000,
+    "octal": 0o755,
+    "binary": 0b1010
+  },
+  "escapeSequences": {
+    "newline": "Line 1\\nLine 2",
+    "tab": "Column 1\\tColumn 2",
+    "quote": "He said \\\"Hello\\\"",
+    "backslash": "Path\\\\to\\\\file",
+    "unicode": "Unicode: \\u00A9 2024"
+  },
+  "nested": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "deep": "value",
+          "array": [1, 2, 3, {"nested": "object"}]
+        }
+      }
+    }
+  },
+  "arrayTests": [
+    "string",
+    123,
+    true,
+    null,
+    {"object": "in array"},
+    ["nested", "array"]
+  ]
+}
