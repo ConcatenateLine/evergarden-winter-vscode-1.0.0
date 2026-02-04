@@ -63,7 +63,7 @@ temp/
 
 # Screenshots (unless you want them in package)
 screenshots/
-*.png
-!icon.png
-!preview.png
-!preview10.png
+*.webp
+!icon.webp
+!preview.webp
+!preview10.webp

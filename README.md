@@ -7,10 +7,12 @@ Nature-inspired winter color themes for Visual Studio Code, inspired by the Ever
 ### 🌲 Evergarden Winter (Dark)
 A cozy dark theme with deep forest green-grey backgrounds and light grey foreground.
 
+![Theme Preview](preview.webp)
+
 ### ❄️ Evergarden Winter Light  
 A gentle light theme with warm paper white backgrounds and rich dark brown text.
 
-![Theme Preview](preview.png)
+![Theme Preview](preview10.webp)
 
 ## Features
 
@@ -193,5 +195,7 @@ Inspired by:
 - [Nord](https://github.com/nordtheme/nord) color scheme
 
 ---
+
+**Enjoy your cozy coding sessions!** 🌲❄️✨
 
 **Enjoy your cozy coding sessions!** 🌲❄️✨
