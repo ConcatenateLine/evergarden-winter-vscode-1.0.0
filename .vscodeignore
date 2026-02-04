@@ -16,6 +16,8 @@ test-theme.html
 test-theme.js
 **/test/**
 **/tests/**
+**/tests-syntax/**
+**/screenshots/**
 
 # Documentation (keep README, LICENSE)
 PUBLISHING.md
@@ -64,3 +66,4 @@ screenshots/
 *.png
 !icon.png
 !preview.png
+!preview10.png
