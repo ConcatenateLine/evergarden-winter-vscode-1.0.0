@@ -197,5 +197,3 @@ Inspired by:
 ---
 
 **Enjoy your cozy coding sessions!** 🌲❄️✨
-
-**Enjoy your cozy coding sessions!** 🌲❄️✨
